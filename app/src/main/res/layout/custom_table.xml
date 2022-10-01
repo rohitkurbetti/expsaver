@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_border_for_table"
+    >
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textColor="#000"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:text="Sales"-->
+    <!--        android:gravity="center"/>-->
+
+    <HorizontalScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableLayout
+                android:layout_margin="20dp"
+                android:id="@+id/table_layout"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="20sp"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/table_row1"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:textColor="#03A9F4"
+                        android:textSize="10sp"
+                        android:id="@+id/tvsrno"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Srno"/>
+                    <TextView
+                        android:textSize="10sp"
+                        android:id="@+id/tvpert"
+                        android:textColor="#03A9F4"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="Perticulars"/>
+                    <TextView
+                        android:id="@+id/tvCostInc"
+                        android:textSize="10sp"
+                        android:textColor="#03A9F4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Cost Incurred"/>
+                    <TextView
+                        android:id="@+id/tvactSuffCost"
+                        android:textSize="10sp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#03A9F4"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Actual Suff Cost"/>
+                    <TextView
+                        android:id="@+id/tvdifference"
+                        android:textColor="#03A9F4"
+                        android:textSize="10sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Difference"/>
+                    <TextView
+                        android:textColor="#03A9F4"
+                        android:id="@+id/tvdateTime"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Date Time"/>
+                </TableRow>
+                <View
+                    android:layout_height="3dip"
+                    android:layout_width="match_parent"
+                    android:background="#03A9F4"/>
+            </TableLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+</LinearLayout>
